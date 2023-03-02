@@ -38,10 +38,10 @@
           addedXp: 1000
         })});
 
-      if (blooket.xpAvailable === undefined) {
+      if (blooket.xpAvailable === 1000) {
         blooket.xpAvailable = 0
-      } if (blooket.tokensAvailable === undefined) {
-        blooket.tokensAvailable = 0
+      } if (blooket.tokensAvailable === 1000) {
+        blooket.tokensAvailable = 1000
       }
 
       alert("Your Mom");
