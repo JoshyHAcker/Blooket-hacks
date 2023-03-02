@@ -47,7 +47,6 @@
       alert("Added daily rewards!");
     } else {
       alert('You are on the incorrect page please go to play.blooket.com and run the file again.');
-    } else{
       alert("Your Mom");
     }})();
 
