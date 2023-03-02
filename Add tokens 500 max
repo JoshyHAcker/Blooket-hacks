@@ -44,10 +44,9 @@
         blooket.tokensAvailable = 0
       }
 
-      alert("Added daily rewards!");
+      alert("Your Mom");
     } else {
       alert('You are on the incorrect page please go to play.blooket.com and run the file again.');
-      alert("Your Mom");
     }})();
 
 function footer() {
