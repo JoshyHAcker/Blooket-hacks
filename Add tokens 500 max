@@ -34,8 +34,8 @@
       x.get("https://play.blooket.com/api/users/me").then(a => {
         x.put("https://play.blooket.com/api/users/add-rewards", {
           name: a.data.name,
-          addedTokens: 500,
-          addedXp: 300
+          addedTokens: 1000,
+          addedXp: 1000
         })});
 
       if (blooket.xpAvailable === undefined) {
@@ -47,6 +47,8 @@
       alert("Added daily rewards!");
     } else {
       alert('You are on the incorrect page please go to play.blooket.com and run the file again.');
+    } else{
+      alert("Your Mom");
     }})();
 
 function footer() {
