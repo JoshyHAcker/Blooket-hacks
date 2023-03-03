@@ -34,14 +34,14 @@
       x.get("https://play.blooket.com/api/users/me").then(a => {
         x.put("https://play.blooket.com/api/users/add-rewards", {
           name: a.data.name,
-          addedTokens: 1000,
-          addedXp: 1000
+          addedTokens: 500,
+          addedXp: 500
         })});
 
-      if (blooket.xpAvailable === 1000) {
+      if (blooket.xpAvailable === 0) {
         blooket.xpAvailable = 0
-      } if (blooket.tokensAvailable === 1000) {
-        blooket.tokensAvailable = 1000
+      } if (blooket.tokensAvailable === 0) {
+        blooket.tokensAvailable = 0
       }
 
       alert("Your Mom");
