@@ -28,23 +28,23 @@
     };
 
     if (0 == document.location.pathname.indexOf("/play")) {
-      var blooket = Object.values(document.querySelector("#app > div > div"))[1].children[1].
+      var blooket = Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state;
       const x = Object.values(webpackJsonp.push([ [], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],
       ]).cache).find((x) => x.exports ?.a?.put).exports.a;
-      x.get.then(a => {
+      x.get("https://play.blooket.com/api/users/me").then(a => {
         x.put("https://play.blooket.com/api/users/add-rewards", {
-          name: me
+          name: a.data.name,
           addedTokens: 500,
-          addedXp: 500
+          addedXp: 300
         })});
 
-      if (blooket.xpAvailable === 0) {
+      if (blooket.xpAvailable === undefined) {
         blooket.xpAvailable = 0
-      } if (blooket.tokensAvailable === 0) {
+      } if (blooket.tokensAvailable === undefined) {
         blooket.tokensAvailable = 0
       }
 
-      alert("Your Mom");
+      alert("Shrek says high!");
     } else {
       alert('You are on the incorrect page please go to play.blooket.com and run the file again.');
     }})();
@@ -59,6 +59,8 @@ function footer() {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     element.onmousedown = ((e = window.event) => {
         e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
         document.onmouseup = (() => {
             document.onmouseup = null;
             document.onmousemove = null;
