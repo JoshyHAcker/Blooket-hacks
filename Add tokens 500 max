@@ -33,7 +33,7 @@
       ]).cache).find((x) => x.exports ?.a?.put).exports.a;
       x.get.then(a => {
         x.put("https://play.blooket.com/api/users/add-rewards", {
-          name: a.data.name,
+          name: me
           addedTokens: 500,
           addedXp: 500
         })});
