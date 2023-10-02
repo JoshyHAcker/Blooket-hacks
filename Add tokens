@@ -1,6 +1,5 @@
 /**
 * @license StewartPrivateLicense-2.0.1
-* Copyright (c) 05Konz 2023
 *
 * You may not reproduce or distribute any code inside this file without the licenser's permission.
 * You may not copy, modify, steal, skid, or recreate any of the code inside this file.
@@ -39,7 +38,7 @@
                     playersDefeated: 0,
                 }).then(console.log);
                 axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
-                    .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
+                    .then(({ data: { dailyReward: 1000 } }) => alert(`Added max tokens and xp, and got { dailyReward: 1000 } daily wheel tokens!`))
                     .catch(() => alert('There was an error when adding rewards.'));
             });
         }
