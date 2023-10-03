@@ -6,7 +6,7 @@
 * You may not under any circumstance republish any code from this file as your own.
 * 
 * ALL TERMS STATED IN THE LINK BELOW APPLY ASWELL
-* https://github.com/05Konz/Blooket-Cheats/blob/main/LICENSE
+* https://github.com/JoshyHAcker/Blooket-Cheats/blob/main/LICENSE
 */
 
 /* THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH */
@@ -30,7 +30,7 @@
                 await axios.put("https://play.blooket.com/api/users/factorystats", {
                     blookUsed, t, name,
                     cash: Math.floor(Math.random() * 90000000) + 10000000,
-                    correctAnswers: Math.floor(Math.random() * 500) + 500,
+                    correctAnswers: Math.floor(Math.random() * 500) + 500) + 1000
                     upgrades: Math.floor(Math.random() * 300) + 300,
                     mode: "Time-Solo",
                     nameUsed: "You",
@@ -44,7 +44,7 @@
         }
     });
     let img = new Image;
-    img.src = "https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/autoupdate/timestamps/global/getDailyRewards.png?" + Date.now();
+    img.src = "https://raw.githubusercontent.com/JoshyHAcker/Blooket-Cheats/main/autoupdate/timestamps/global/getDailyRewards.png?" + Date.now();
     img.crossOrigin = "Anonymous";
     img.onload = function() {
         const c = document.createElement("canvas");
